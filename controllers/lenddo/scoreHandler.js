@@ -1,6 +1,7 @@
 const Hawk = require('hawk');
 
 const credentialsFunc = (id) => {
+    console.log('id de la funcion credentualsFunc:', id);
     const credentials = {
         key: 'werxhqb98rpaxn39848xrunpaw3489ruxnpa98w4rxn',
         algorithm: 'sha256',
