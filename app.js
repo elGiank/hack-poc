@@ -11,7 +11,7 @@ const homeRoutes = require('./controllers/home/home');
 const lenddoRoutes = require('./controllers/lenddo/lenddo');
 
 //Middlewares
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(methodOverride());
 app.use(cors());
@@ -21,11 +21,10 @@ app.use('/', homeRoutes);
 app.use('/lenddo', lenddoRoutes);
 
 // Handle 404 error, the last middleware.
-app.use("*", (req,res) => {
+app.use("*", (req, res) => {
     res.status(404).send('404');
 });
 
 app.listen(port, () => {
     console.log('We are live on ' + port);
 });
-;
