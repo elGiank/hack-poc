@@ -27,15 +27,11 @@ const scoreHandler = (req, res) => {
 
             // Generate Server-Authorization response header
             const header = Hawk.server.header(auth.credentials, auth.artifacts, { payload, contentType: headers['Content-Type'] });
-            console.log('headers with server auth', headers);
 
             res.set(headers).status(200).send(payload);
 
         })
         .catch((err) => {
-            console.log('Authenticate incoming request result catch');
-            console.log('err', err);
-
             res.status(401).send(err);
         });
 
