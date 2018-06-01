@@ -1,7 +1,6 @@
 {
   "name": "hawk-poc",
   "version": "1.0.0",
-  "main": "app.js",
   "scripts": {
     "start": "node app.js"
   },
@@ -10,11 +9,11 @@
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "hawk": "^7.0.7",
-    "method-override": "^2.3.10"
+    "method-override": "^2.3.10",
+    "request": "^2.87.0"
   },
   "devDependencies": {
-    "nodemon": "^1.17.5",
-    "request": "^2.87.0"
+    "nodemon": "^1.17.5"
   },
   "engines": {
     "node": ">=8.11.1"
