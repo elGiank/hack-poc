@@ -11,7 +11,7 @@ const credentials = {
 
 // Request options
 const requestOptions = {
-    uri: 'https://hawk-dev-gk.azurewebsites.net/lenddo/lenddo',
+    uri: 'https://hawk-dev-gk.azurewebsites.net/lenddo',
     method: 'GET',
     headers: {}
 };
