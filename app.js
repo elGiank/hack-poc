@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
 
 const app = express();
-const port = 8000;
+const port = 80;
 
 //Controllers
 const homeRoutes = require('./controllers/home/home');
