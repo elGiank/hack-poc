@@ -11,7 +11,7 @@ const credentials = {
 
 // Request options
 const requestOptions = {
-    uri: 'http://localhost:8000/lenddo',
+    uri: 'https://hawk-dev-gk.azurewebsites.net/lenddo/lenddo',
     method: 'GET',
     headers: {}
 };
@@ -19,7 +19,7 @@ const requestOptions = {
 const testHandler = (res) => {
 
     // Generate Authorization request header
-    const { header } = Hawk.client.header('http://localhost:8000/lenddo', 'GET', {
+    const { header } = Hawk.client.header('https://hawk-dev-gk.azurewebsites.net/lenddo', 'GET', {
         credentials: credentials,
         ext: 'and welcome!'
     });
