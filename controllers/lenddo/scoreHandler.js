@@ -27,6 +27,7 @@ const scoreHandler = (req, res) => {
 
             // Generate Server-Authorization response header
             const header = Hawk.server.header(auth.credentials, auth.artifacts, { payload, contentType: headers['Content-Type'] });
+            headers['Server-Authorization'] = header;
 
             res.set(headers).status(200).send(payload);
 
