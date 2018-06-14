@@ -4,7 +4,6 @@ const credentialsFunc = (id) => {
     const credentials = {
         key: 'werxhqb98rpaxn39848xrunpaw3489ruxnpa98w4rxn',
         algorithm: 'sha256',
-        user: 'Steve'
     };
     return credentials;
 };
@@ -22,7 +21,7 @@ const scoreHandler = (req, res) => {
         .then((auth) => {
 
             //Prepare response
-            const payload = (`Hello ${auth.credentials.user} ${auth.artifacts.ext}`);
+            const payload = 'accepted';
             const headers = { 'Content-Type': 'text/plain' };
 
             // Generate Server-Authorization response header
